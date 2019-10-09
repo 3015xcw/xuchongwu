@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="echarts.js"></script>
+		<script src="https://js.arcgis.com/4.11/"></script>
+		<script src="m.js"></script>
+		<script src="15chart.js"></script>
+		<title>湖北省人口经济图</title>
+	</head>
+	<body>
+		<div id="viewDiv">
+			<div id="mychart">
+				<select id="slt">
+					<option>GDP</option>
+					<option>GDP增速</option>
+					<option>人口POP</option>
+				</select>
+				<select id="slt2">
+					<option value="bar">柱状图</option>
+					<option value="line">折线图</option>
+				</select>
+				<div id="box"></div>
+			</div>
+			<div class="btns">
+				<input type="radio" name="ra" value="0" /> osm
+				<br />
+				<input type="radio" name="ra" value="1" /> hybrid
+				<br />
+				<input type="radio" name="ra" value="2" /> streets
+				<br />
+			</div>
+			<div class="checks">
+				<input type="checkbox" id="0" /> 湖北省各市区
+			</div>
+			<div id="sltlayer">
+				<select class="slt" id="test" size="4" multiple="multiple">
+				</select>
+			</div>
+		</div>
+	</body>
+</html>
